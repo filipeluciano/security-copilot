@@ -14,14 +14,15 @@ paths:
       - description: Account to be checked against the 'Have I been pwned API'
         in: path
         name: account
-        required: true
         schema:
           type: string
       responses:
         '200':
           description: A list of breaches
+          schema: {}
         '404':
           description: Not found
+          schema: {}
   /breaches:
     get:
       description: List all breached sites that are currently available in the Have I Been Pwned API
