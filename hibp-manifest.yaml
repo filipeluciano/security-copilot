@@ -13,3 +13,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/filipeluciano/security-copilot/main/hibp-openapi.yaml
