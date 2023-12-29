@@ -18,11 +18,18 @@ paths:
         schema:
           type: string
       responses:
+        '200':
+          description: A list of breaches
         '404':
           description: Not found
+  /breaches:
+    get:
+      description: List all breached sites that are currently available in the Have I Been Pwned API
+      parameters: []
+      responses:
         default:
-          description: default
-          schema: array
-      summary: Get all breaches for an account
+          description: List all breached sites that are currently available in the Have I Been Pwned API.
+          schema: {}
+      summary: Get all breached sites        
 servers:
 - url: https://haveibeenpwned.com/api/v3
