@@ -18,12 +18,11 @@ paths:
         schema:
           type: string
       responses:
-        '200':
-          description: success
-          content:
-            application/json:
-              schema:
-                type: array
+        '404':
+          description: Not found
+        default:
+          description: default
+          schema: array
       summary: Get all breaches for an account
 servers:
 - url: https://haveibeenpwned.com/api/v3
