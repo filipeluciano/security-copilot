@@ -17,11 +17,13 @@ paths:
         required: true
         schema:
           type: string
-        style: form
       responses:
-        default:
-          description: default
-          schema: {}
+        '200':
+          description: success
+          content:
+            application/json:
+              schema:
+                type: array
       summary: Get all breaches for an account
 servers:
 - url: https://haveibeenpwned.com/api/v3
