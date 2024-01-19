@@ -13,7 +13,8 @@ paths:
       parameters:
       - in: query
         name: AllPreviousPromptsFullMessage
-        schema: {}
+        schema:
+          type: string
         required: true
       - description: Account to be checked against the 'Have I been pwned API'
         in: path
@@ -32,7 +33,7 @@ paths:
         default:
           description: Error
           schema: {}
-          
+
   /breaches:
     get:
       description: List all breached sites that are currently available in the Have I Been Pwned API
