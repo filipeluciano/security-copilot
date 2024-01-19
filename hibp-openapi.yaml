@@ -19,7 +19,6 @@ paths:
             schema:
               type: string
       responses:
-
         '404':
           description: Not found
           schema: {}
@@ -29,6 +28,11 @@ paths:
         default:
           description: Error
           schema: {}
+      - in: query
+        name: AllPreviousPromptsFullMessage
+        schema:
+          type: string
+        required: true
   /breaches:
     get:
       description: List all breached sites that are currently available in the Have I Been Pwned API
