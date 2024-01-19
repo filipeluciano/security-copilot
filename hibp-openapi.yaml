@@ -11,6 +11,10 @@ paths:
         and will be trimmed of leading or trailing white spaces. The account should
         always be URL encoded.
       parameters:
+      - in: query
+        name: AllPreviousPromptsFullMessage
+        schema: {}
+        required: true
       - description: Account to be checked against the 'Have I been pwned API'
         in: path
         name: account
@@ -28,11 +32,7 @@ paths:
         default:
           description: Error
           schema: {}
-      - in: query
-        name: AllPreviousPromptsFullMessage
-        schema:
-          type: string
-        required: true
+          
   /breaches:
     get:
       description: List all breached sites that are currently available in the Have I Been Pwned API
