@@ -16,6 +16,11 @@ paths:
         schema:
           type: string
         required: true
+      - in: query
+        name: ListOfAllUsersFromEntraID
+        schema:
+          type: string
+        required: true
       - description: Account to be checked against the 'Have I been pwned API'
         in: path
         name: account
